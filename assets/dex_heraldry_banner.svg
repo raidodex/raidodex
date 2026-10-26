@@ -37,35 +37,29 @@
     </clipPath>
 
     <style>
+
+      .herald-lancet {
+        stroke-dasharray: 48 24;
+        animation: lancetFlow 16s linear infinite;
+      }
       .herald-comet {
-        stroke-dasharray: 90 450;
-        animation: heraldComet 7.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        stroke-dasharray: 80 480;
+        animation: cometSweep 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
-      .crimson-glow {
-        animation: crimsonBreathe 4s ease-in-out infinite alternate;
+      .s1-rotating-rose {
+        animation: spinRoseWindow 36s linear infinite;
       }
-      .sentinel-march {
-        stroke-dasharray: 16 12;
-        animation: sentinelPatrol 20s linear infinite;
-      }
-      .halo-pulse {
-        animation: haloGlow 3s ease-in-out infinite alternate;
-      }
-      @keyframes heraldComet {
-        from { stroke-dashoffset: 1080; }
+      @keyframes lancetFlow {
+        from { stroke-dashoffset: 288; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes crimsonBreathe {
-        0% { opacity: 0.4; }
-        100% { opacity: 1.0; }
+      @keyframes cometSweep {
+        from { stroke-dashoffset: 1120; }
+        to { stroke-dashoffset: 0; }
       }
-      @keyframes sentinelPatrol {
-        from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 280; }
-      }
-      @keyframes haloGlow {
-        0% { opacity: 0.45; }
-        100% { opacity: 0.95; }
+      @keyframes spinRoseWindow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
       }
     </style>
   </defs>
@@ -75,11 +69,54 @@
     <rect width="960" height="460" fill="url(#s1-vig)" />
     <rect width="960" height="460" fill="url(#s1-scrim)" />
   </g>
-  <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
-  <rect x="6" y="6" width="948" height="448" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="444" rx="8" fill="none" stroke="url(#s1-plat)" stroke-width="1.7" class="herald-comet" />
-  <rect x="13" y="13" width="934" height="434" rx="6" fill="none" stroke="url(#s1-crimson)" stroke-width="1.2" class="crimson-glow" />
-  <rect x="16" y="16" width="928" height="428" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="sentinel-march" stroke-opacity="0.65" />
+  <!-- Historical Gothic Lancet Arches & 4 Corner Rose Windows -->
+  <rect x="8" y="8" width="944" height="444" rx="8" fill="none" stroke="#1f2328" stroke-width="1.2" />
+  <rect x="14" y="14" width="932" height="432" rx="6" fill="none" stroke="url(#s1-plat)" stroke-width="1.6" class="herald-comet" />
+  
+  <!-- Pointed Lancet Arch Friezes (Top & Bottom) -->
+  <g class="herald-lancet">
+    M 60.0 24.0 Q 60.0 12.0 72.0 12.0 Q 84.0 12.0 84.0 24.0 M 84.0 24.0 Q 84.0 12.0 96.0 12.0 Q 108.0 12.0 108.0 24.0 M 108.0 24.0 Q 108.0 12.0 120.0 12.0 Q 132.0 12.0 132.0 24.0 M 132.0 24.0 Q 132.0 12.0 144.0 12.0 Q 156.0 12.0 156.0 24.0 M 156.0 24.0 Q 156.0 12.0 168.0 12.0 Q 180.0 12.0 180.0 24.0 M 180.0 24.0 Q 180.0 12.0 192.0 12.0 Q 204.0 12.0 204.0 24.0 M 204.0 24.0 Q 204.0 12.0 216.0 12.0 Q 228.0 12.0 228.0 24.0 M 228.0 24.0 Q 228.0 12.0 240.0 12.0 Q 252.0 12.0 252.0 24.0 M 252.0 24.0 Q 252.0 12.0 264.0 12.0 Q 276.0 12.0 276.0 24.0 M 276.0 24.0 Q 276.0 12.0 288.0 12.0 Q 300.0 12.0 300.0 24.0 M 300.0 24.0 Q 300.0 12.0 312.0 12.0 Q 324.0 12.0 324.0 24.0 M 324.0 24.0 Q 324.0 12.0 336.0 12.0 Q 348.0 12.0 348.0 24.0 M 348.0 24.0 Q 348.0 12.0 360.0 12.0 Q 372.0 12.0 372.0 24.0 M 372.0 24.0 Q 372.0 12.0 384.0 12.0 Q 396.0 12.0 396.0 24.0 M 396.0 24.0 Q 396.0 12.0 408.0 12.0 Q 420.0 12.0 420.0 24.0 M 420.0 24.0 Q 420.0 12.0 432.0 12.0 Q 444.0 12.0 444.0 24.0 M 444.0 24.0 Q 444.0 12.0 456.0 12.0 Q 468.0 12.0 468.0 24.0 M 468.0 24.0 Q 468.0 12.0 480.0 12.0 Q 492.0 12.0 492.0 24.0 M 492.0 24.0 Q 492.0 12.0 504.0 12.0 Q 516.0 12.0 516.0 24.0 M 516.0 24.0 Q 516.0 12.0 528.0 12.0 Q 540.0 12.0 540.0 24.0 M 540.0 24.0 Q 540.0 12.0 552.0 12.0 Q 564.0 12.0 564.0 24.0 M 564.0 24.0 Q 564.0 12.0 576.0 12.0 Q 588.0 12.0 588.0 24.0 M 588.0 24.0 Q 588.0 12.0 600.0 12.0 Q 612.0 12.0 612.0 24.0 M 612.0 24.0 Q 612.0 12.0 624.0 12.0 Q 636.0 12.0 636.0 24.0 M 636.0 24.0 Q 636.0 12.0 648.0 12.0 Q 660.0 12.0 660.0 24.0 M 660.0 24.0 Q 660.0 12.0 672.0 12.0 Q 684.0 12.0 684.0 24.0 M 684.0 24.0 Q 684.0 12.0 696.0 12.0 Q 708.0 12.0 708.0 24.0 M 708.0 24.0 Q 708.0 12.0 720.0 12.0 Q 732.0 12.0 732.0 24.0 M 732.0 24.0 Q 732.0 12.0 744.0 12.0 Q 756.0 12.0 756.0 24.0 M 756.0 24.0 Q 756.0 12.0 768.0 12.0 Q 780.0 12.0 780.0 24.0 M 780.0 24.0 Q 780.0 12.0 792.0 12.0 Q 804.0 12.0 804.0 24.0 M 804.0 24.0 Q 804.0 12.0 816.0 12.0 Q 828.0 12.0 828.0 24.0 M 828.0 24.0 Q 828.0 12.0 840.0 12.0 Q 852.0 12.0 852.0 24.0 M 852.0 24.0 Q 852.0 12.0 864.0 12.0 Q 876.0 12.0 876.0 24.0 M 876.0 24.0 Q 876.0 12.0 888.0 12.0 Q 900.0 12.0 900.0 24.0
+    M 60.0 436.0 Q 60.0 448.0 72.0 448.0 Q 84.0 448.0 84.0 436.0 M 84.0 436.0 Q 84.0 448.0 96.0 448.0 Q 108.0 448.0 108.0 436.0 M 108.0 436.0 Q 108.0 448.0 120.0 448.0 Q 132.0 448.0 132.0 436.0 M 132.0 436.0 Q 132.0 448.0 144.0 448.0 Q 156.0 448.0 156.0 436.0 M 156.0 436.0 Q 156.0 448.0 168.0 448.0 Q 180.0 448.0 180.0 436.0 M 180.0 436.0 Q 180.0 448.0 192.0 448.0 Q 204.0 448.0 204.0 436.0 M 204.0 436.0 Q 204.0 448.0 216.0 448.0 Q 228.0 448.0 228.0 436.0 M 228.0 436.0 Q 228.0 448.0 240.0 448.0 Q 252.0 448.0 252.0 436.0 M 252.0 436.0 Q 252.0 448.0 264.0 448.0 Q 276.0 448.0 276.0 436.0 M 276.0 436.0 Q 276.0 448.0 288.0 448.0 Q 300.0 448.0 300.0 436.0 M 300.0 436.0 Q 300.0 448.0 312.0 448.0 Q 324.0 448.0 324.0 436.0 M 324.0 436.0 Q 324.0 448.0 336.0 448.0 Q 348.0 448.0 348.0 436.0 M 348.0 436.0 Q 348.0 448.0 360.0 448.0 Q 372.0 448.0 372.0 436.0 M 372.0 436.0 Q 372.0 448.0 384.0 448.0 Q 396.0 448.0 396.0 436.0 M 396.0 436.0 Q 396.0 448.0 408.0 448.0 Q 420.0 448.0 420.0 436.0 M 420.0 436.0 Q 420.0 448.0 432.0 448.0 Q 444.0 448.0 444.0 436.0 M 444.0 436.0 Q 444.0 448.0 456.0 448.0 Q 468.0 448.0 468.0 436.0 M 468.0 436.0 Q 468.0 448.0 480.0 448.0 Q 492.0 448.0 492.0 436.0 M 492.0 436.0 Q 492.0 448.0 504.0 448.0 Q 516.0 448.0 516.0 436.0 M 516.0 436.0 Q 516.0 448.0 528.0 448.0 Q 540.0 448.0 540.0 436.0 M 540.0 436.0 Q 540.0 448.0 552.0 448.0 Q 564.0 448.0 564.0 436.0 M 564.0 436.0 Q 564.0 448.0 576.0 448.0 Q 588.0 448.0 588.0 436.0 M 588.0 436.0 Q 588.0 448.0 600.0 448.0 Q 612.0 448.0 612.0 436.0 M 612.0 436.0 Q 612.0 448.0 624.0 448.0 Q 636.0 448.0 636.0 436.0 M 636.0 436.0 Q 636.0 448.0 648.0 448.0 Q 660.0 448.0 660.0 436.0 M 660.0 436.0 Q 660.0 448.0 672.0 448.0 Q 684.0 448.0 684.0 436.0 M 684.0 436.0 Q 684.0 448.0 696.0 448.0 Q 708.0 448.0 708.0 436.0 M 708.0 436.0 Q 708.0 448.0 720.0 448.0 Q 732.0 448.0 732.0 436.0 M 732.0 436.0 Q 732.0 448.0 744.0 448.0 Q 756.0 448.0 756.0 436.0 M 756.0 436.0 Q 756.0 448.0 768.0 448.0 Q 780.0 448.0 780.0 436.0 M 780.0 436.0 Q 780.0 448.0 792.0 448.0 Q 804.0 448.0 804.0 436.0 M 804.0 436.0 Q 804.0 448.0 816.0 448.0 Q 828.0 448.0 828.0 436.0 M 828.0 436.0 Q 828.0 448.0 840.0 448.0 Q 852.0 448.0 852.0 436.0 M 852.0 436.0 Q 852.0 448.0 864.0 448.0 Q 876.0 448.0 876.0 436.0 M 876.0 436.0 Q 876.0 448.0 888.0 448.0 Q 900.0 448.0 900.0 436.0
+  </g>
+
+  <!-- 4 Corner Gothic Rose Windows -->
+  
+    <g class="s1-rotating-rose" style="transform-origin: 36px 36px;">
+      <circle cx="36" cy="36" r="22" fill="#0d1117" stroke="url(#s1-plat)" stroke-width="1.2" />
+      <circle cx="36" cy="36" r="18.7" fill="none" stroke="url(#s1-crimson)" stroke-width="0.8" />
+      <circle cx="36" cy="36" r="7.699999999999999" fill="#161b22" stroke="url(#s1-plat)" stroke-width="1.0" />
+      <circle cx="36" cy="36" r="3" fill="url(#s1-plat)" />
+      <path d="M 43.7 36.0 L 54.7 36.0 M 41.4 41.4 L 49.2 49.2 M 36.0 43.7 L 36.0 54.7 M 30.6 41.4 L 22.8 49.2 M 28.3 36.0 L 17.3 36.0 M 30.6 30.6 L 22.8 22.8 M 36.0 28.3 L 36.0 17.3 M 41.4 30.6 L 49.2 22.8" stroke="url(#s1-plat)" stroke-width="0.75" />
+      <path d="M 54.7 36.0 Q 53.3 43.2 49.2 49.2 M 49.2 49.2 Q 43.2 53.3 36.0 54.7 M 36.0 54.7 Q 28.8 53.3 22.8 49.2 M 22.8 49.2 Q 18.7 43.2 17.3 36.0 M 17.3 36.0 Q 18.7 28.8 22.8 22.8 M 22.8 22.8 Q 28.8 18.7 36.0 17.3 M 36.0 17.3 Q 43.2 18.7 49.2 22.8 M 49.2 22.8 Q 53.3 28.8 54.7 36.0" stroke="url(#s1-plat)" stroke-width="0.9" fill="none" />
+    </g>
+  
+    <g class="s1-rotating-rose" style="transform-origin: 924px 36px;">
+      <circle cx="924" cy="36" r="22" fill="#0d1117" stroke="url(#s1-plat)" stroke-width="1.2" />
+      <circle cx="924" cy="36" r="18.7" fill="none" stroke="url(#s1-crimson)" stroke-width="0.8" />
+      <circle cx="924" cy="36" r="7.699999999999999" fill="#161b22" stroke="url(#s1-plat)" stroke-width="1.0" />
+      <circle cx="924" cy="36" r="3" fill="url(#s1-plat)" />
+      <path d="M 931.7 36.0 L 942.7 36.0 M 929.4 41.4 L 937.2 49.2 M 924.0 43.7 L 924.0 54.7 M 918.6 41.4 L 910.8 49.2 M 916.3 36.0 L 905.3 36.0 M 918.6 30.6 L 910.8 22.8 M 924.0 28.3 L 924.0 17.3 M 929.4 30.6 L 937.2 22.8" stroke="url(#s1-plat)" stroke-width="0.75" />
+      <path d="M 942.7 36.0 Q 941.3 43.2 937.2 49.2 M 937.2 49.2 Q 931.2 53.3 924.0 54.7 M 924.0 54.7 Q 916.8 53.3 910.8 49.2 M 910.8 49.2 Q 906.7 43.2 905.3 36.0 M 905.3 36.0 Q 906.7 28.8 910.8 22.8 M 910.8 22.8 Q 916.8 18.7 924.0 17.3 M 924.0 17.3 Q 931.2 18.7 937.2 22.8 M 937.2 22.8 Q 941.3 28.8 942.7 36.0" stroke="url(#s1-plat)" stroke-width="0.9" fill="none" />
+    </g>
+  
+    <g class="s1-rotating-rose" style="transform-origin: 36px 424px;">
+      <circle cx="36" cy="424" r="22" fill="#0d1117" stroke="url(#s1-plat)" stroke-width="1.2" />
+      <circle cx="36" cy="424" r="18.7" fill="none" stroke="url(#s1-crimson)" stroke-width="0.8" />
+      <circle cx="36" cy="424" r="7.699999999999999" fill="#161b22" stroke="url(#s1-plat)" stroke-width="1.0" />
+      <circle cx="36" cy="424" r="3" fill="url(#s1-plat)" />
+      <path d="M 43.7 424.0 L 54.7 424.0 M 41.4 429.4 L 49.2 437.2 M 36.0 431.7 L 36.0 442.7 M 30.6 429.4 L 22.8 437.2 M 28.3 424.0 L 17.3 424.0 M 30.6 418.6 L 22.8 410.8 M 36.0 416.3 L 36.0 405.3 M 41.4 418.6 L 49.2 410.8" stroke="url(#s1-plat)" stroke-width="0.75" />
+      <path d="M 54.7 424.0 Q 53.3 431.2 49.2 437.2 M 49.2 437.2 Q 43.2 441.3 36.0 442.7 M 36.0 442.7 Q 28.8 441.3 22.8 437.2 M 22.8 437.2 Q 18.7 431.2 17.3 424.0 M 17.3 424.0 Q 18.7 416.8 22.8 410.8 M 22.8 410.8 Q 28.8 406.7 36.0 405.3 M 36.0 405.3 Q 43.2 406.7 49.2 410.8 M 49.2 410.8 Q 53.3 416.8 54.7 424.0" stroke="url(#s1-plat)" stroke-width="0.9" fill="none" />
+    </g>
+  
+    <g class="s1-rotating-rose" style="transform-origin: 924px 424px;">
+      <circle cx="924" cy="424" r="22" fill="#0d1117" stroke="url(#s1-plat)" stroke-width="1.2" />
+      <circle cx="924" cy="424" r="18.7" fill="none" stroke="url(#s1-crimson)" stroke-width="0.8" />
+      <circle cx="924" cy="424" r="7.699999999999999" fill="#161b22" stroke="url(#s1-plat)" stroke-width="1.0" />
+      <circle cx="924" cy="424" r="3" fill="url(#s1-plat)" />
+      <path d="M 931.7 424.0 L 942.7 424.0 M 929.4 429.4 L 937.2 437.2 M 924.0 431.7 L 924.0 442.7 M 918.6 429.4 L 910.8 437.2 M 916.3 424.0 L 905.3 424.0 M 918.6 418.6 L 910.8 410.8 M 924.0 416.3 L 924.0 405.3 M 929.4 418.6 L 937.2 410.8" stroke="url(#s1-plat)" stroke-width="0.75" />
+      <path d="M 942.7 424.0 Q 941.3 431.2 937.2 437.2 M 937.2 437.2 Q 931.2 441.3 924.0 442.7 M 924.0 442.7 Q 916.8 441.3 910.8 437.2 M 910.8 437.2 Q 906.7 431.2 905.3 424.0 M 905.3 424.0 Q 906.7 416.8 910.8 410.8 M 910.8 410.8 Q 916.8 406.7 924.0 405.3 M 924.0 405.3 Q 931.2 406.7 937.2 410.8 M 937.2 410.8 Q 941.3 416.8 942.7 424.0" stroke="url(#s1-plat)" stroke-width="0.9" fill="none" />
+    </g>
+
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s1-plat)" stroke-width="1.1" fill="none" opacity="0.85">

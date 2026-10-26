@@ -37,26 +37,27 @@
     </clipPath>
 
     <style>
+
+      .spearhead-frieze {
+        stroke-dasharray: 60 20;
+        animation: spearMarch 12s linear infinite;
+      }
       .blade-glint {
-        stroke-dasharray: 50 650;
+        stroke-dasharray: 40 600;
         animation: glintSlash 4.8s cubic-bezier(0.2, 0.9, 0.3, 1) infinite;
       }
-      .serrated-edge {
-        stroke-dasharray: 5 3 10 3;
-        animation: bladeSaw 15s linear infinite reverse;
+      .rivet-glow {
+        animation: rivetPulse 3.5s ease-in-out infinite alternate;
       }
-      .blood-fuller {
-        animation: fullerPulse 4s ease-in-out infinite alternate;
-      }
-      @keyframes glintSlash {
-        from { stroke-dashoffset: 1400; }
+      @keyframes spearMarch {
+        from { stroke-dashoffset: 240; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes bladeSaw {
-        from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 420; }
+      @keyframes glintSlash {
+        from { stroke-dashoffset: 1280; }
+        to { stroke-dashoffset: 0; }
       }
-      @keyframes fullerPulse {
+      @keyframes rivetPulse {
         0% { opacity: 0.4; }
         100% { opacity: 1.0; }
       }
@@ -69,11 +70,19 @@
     <rect x="0" y="0" width="960" height="145" fill="#000000" fill-opacity="0.58" />
     <rect x="0" y="246" width="960" height="134" fill="#000000" fill-opacity="0.62" />
   </g>
-  <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
-  <rect x="6" y="6" width="948" height="368" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="364" rx="8" fill="none" stroke="url(#s5-plat)" stroke-width="1.7" class="blade-glint" />
-  <rect x="13" y="13" width="934" height="354" rx="6" fill="none" stroke="url(#s5-crimson)" stroke-width="1.2" class="blood-fuller" />
-  <rect x="16" y="16" width="928" height="348" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="serrated-edge" stroke-opacity="0.65" />
+  <!-- Historical Chivalric Spearhead Dentil Frieze & Iron Rivets -->
+  <rect x="8" y="8" width="944" height="364" rx="8" fill="none" stroke="#21262d" stroke-width="1.2" />
+  <rect x="13" y="13" width="934" height="354" rx="6" fill="none" stroke="url(#s5-plat)" stroke-width="1.5" class="blade-glint" />
+
+  <!-- Pointed Spearhead / Halberd Frieze -->
+  <path d="M 40.0 24.0 L 50.0 13.0 L 60.0 24.0 M 60.0 24.0 L 70.0 13.0 L 80.0 24.0 M 80.0 24.0 L 90.0 13.0 L 100.0 24.0 M 100.0 24.0 L 110.0 13.0 L 120.0 24.0 M 120.0 24.0 L 130.0 13.0 L 140.0 24.0 M 140.0 24.0 L 150.0 13.0 L 160.0 24.0 M 160.0 24.0 L 170.0 13.0 L 180.0 24.0 M 180.0 24.0 L 190.0 13.0 L 200.0 24.0 M 200.0 24.0 L 210.0 13.0 L 220.0 24.0 M 220.0 24.0 L 230.0 13.0 L 240.0 24.0 M 240.0 24.0 L 250.0 13.0 L 260.0 24.0 M 260.0 24.0 L 270.0 13.0 L 280.0 24.0 M 280.0 24.0 L 290.0 13.0 L 300.0 24.0 M 300.0 24.0 L 310.0 13.0 L 320.0 24.0 M 320.0 24.0 L 330.0 13.0 L 340.0 24.0 M 340.0 24.0 L 350.0 13.0 L 360.0 24.0 M 360.0 24.0 L 370.0 13.0 L 380.0 24.0 M 380.0 24.0 L 390.0 13.0 L 400.0 24.0 M 400.0 24.0 L 410.0 13.0 L 420.0 24.0 M 420.0 24.0 L 430.0 13.0 L 440.0 24.0 M 440.0 24.0 L 450.0 13.0 L 460.0 24.0 M 460.0 24.0 L 470.0 13.0 L 480.0 24.0 M 480.0 24.0 L 490.0 13.0 L 500.0 24.0 M 500.0 24.0 L 510.0 13.0 L 520.0 24.0 M 520.0 24.0 L 530.0 13.0 L 540.0 24.0 M 540.0 24.0 L 550.0 13.0 L 560.0 24.0 M 560.0 24.0 L 570.0 13.0 L 580.0 24.0 M 580.0 24.0 L 590.0 13.0 L 600.0 24.0 M 600.0 24.0 L 610.0 13.0 L 620.0 24.0 M 620.0 24.0 L 630.0 13.0 L 640.0 24.0 M 640.0 24.0 L 650.0 13.0 L 660.0 24.0 M 660.0 24.0 L 670.0 13.0 L 680.0 24.0 M 680.0 24.0 L 690.0 13.0 L 700.0 24.0 M 700.0 24.0 L 710.0 13.0 L 720.0 24.0 M 720.0 24.0 L 730.0 13.0 L 740.0 24.0 M 740.0 24.0 L 750.0 13.0 L 760.0 24.0 M 760.0 24.0 L 770.0 13.0 L 780.0 24.0 M 780.0 24.0 L 790.0 13.0 L 800.0 24.0 M 800.0 24.0 L 810.0 13.0 L 820.0 24.0 M 820.0 24.0 L 830.0 13.0 L 840.0 24.0 M 840.0 24.0 L 850.0 13.0 L 860.0 24.0 M 860.0 24.0 L 870.0 13.0 L 880.0 24.0 M 880.0 24.0 L 890.0 13.0 L 900.0 24.0 M 900.0 24.0 L 910.0 13.0 L 920.0 24.0" fill="none" stroke="url(#s5-crimson)" stroke-width="1.4" class="spearhead-frieze" />
+  <path d="M 40.0 356.0 L 50.0 367.0 L 60.0 356.0 M 60.0 356.0 L 70.0 367.0 L 80.0 356.0 M 80.0 356.0 L 90.0 367.0 L 100.0 356.0 M 100.0 356.0 L 110.0 367.0 L 120.0 356.0 M 120.0 356.0 L 130.0 367.0 L 140.0 356.0 M 140.0 356.0 L 150.0 367.0 L 160.0 356.0 M 160.0 356.0 L 170.0 367.0 L 180.0 356.0 M 180.0 356.0 L 190.0 367.0 L 200.0 356.0 M 200.0 356.0 L 210.0 367.0 L 220.0 356.0 M 220.0 356.0 L 230.0 367.0 L 240.0 356.0 M 240.0 356.0 L 250.0 367.0 L 260.0 356.0 M 260.0 356.0 L 270.0 367.0 L 280.0 356.0 M 280.0 356.0 L 290.0 367.0 L 300.0 356.0 M 300.0 356.0 L 310.0 367.0 L 320.0 356.0 M 320.0 356.0 L 330.0 367.0 L 340.0 356.0 M 340.0 356.0 L 350.0 367.0 L 360.0 356.0 M 360.0 356.0 L 370.0 367.0 L 380.0 356.0 M 380.0 356.0 L 390.0 367.0 L 400.0 356.0 M 400.0 356.0 L 410.0 367.0 L 420.0 356.0 M 420.0 356.0 L 430.0 367.0 L 440.0 356.0 M 440.0 356.0 L 450.0 367.0 L 460.0 356.0 M 460.0 356.0 L 470.0 367.0 L 480.0 356.0 M 480.0 356.0 L 490.0 367.0 L 500.0 356.0 M 500.0 356.0 L 510.0 367.0 L 520.0 356.0 M 520.0 356.0 L 530.0 367.0 L 540.0 356.0 M 540.0 356.0 L 550.0 367.0 L 560.0 356.0 M 560.0 356.0 L 570.0 367.0 L 580.0 356.0 M 580.0 356.0 L 590.0 367.0 L 600.0 356.0 M 600.0 356.0 L 610.0 367.0 L 620.0 356.0 M 620.0 356.0 L 630.0 367.0 L 640.0 356.0 M 640.0 356.0 L 650.0 367.0 L 660.0 356.0 M 660.0 356.0 L 670.0 367.0 L 680.0 356.0 M 680.0 356.0 L 690.0 367.0 L 700.0 356.0 M 700.0 356.0 L 710.0 367.0 L 720.0 356.0 M 720.0 356.0 L 730.0 367.0 L 740.0 356.0 M 740.0 356.0 L 750.0 367.0 L 760.0 356.0 M 760.0 356.0 L 770.0 367.0 L 780.0 356.0 M 780.0 356.0 L 790.0 367.0 L 800.0 356.0 M 800.0 356.0 L 810.0 367.0 L 820.0 356.0 M 820.0 356.0 L 830.0 367.0 L 840.0 356.0 M 840.0 356.0 L 850.0 367.0 L 860.0 356.0 M 860.0 356.0 L 870.0 367.0 L 880.0 356.0 M 880.0 356.0 L 890.0 367.0 L 900.0 356.0 M 900.0 356.0 L 910.0 367.0 L 920.0 356.0" fill="none" stroke="url(#s5-crimson)" stroke-width="1.4" class="spearhead-frieze" />
+
+  <!-- Forged Armor Rivet Line -->
+  <g class="rivet-glow">
+    <circle cx="50" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="50" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="80" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="80" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="110" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="110" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="140" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="140" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="170" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="170" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="200" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="200" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="230" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="230" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="260" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="260" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="290" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="290" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="320" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="320" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="350" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="350" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="380" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="380" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="410" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="410" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="440" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="440" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="470" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="470" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="500" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="500" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="530" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="530" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="560" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="560" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="590" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="590" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="620" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="620" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="650" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="650" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="680" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="680" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="710" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="710" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="740" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="740" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="770" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="770" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="800" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="800" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="830" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="830" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="860" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="860" cy="350" r="1.8" fill="url(#s5-plat)" /> <circle cx="890" cy="30" r="1.8" fill="url(#s5-plat)" /> <circle cx="890" cy="350" r="1.8" fill="url(#s5-plat)" />
+  </g>
+
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s5-plat)" stroke-width="1.1" fill="none" opacity="0.85">

@@ -37,26 +37,27 @@
     </clipPath>
 
     <style>
-      .sand-time {
-        stroke-dasharray: 2 6 1 5 3 6;
-        animation: sandFall 14s linear infinite;
+
+      .sandglass-frieze {
+        animation: hourglassShift 6s ease-in-out infinite alternate;
       }
-      .ossuary-breath {
-        animation: ossuaryGloom 6.5s ease-in-out infinite alternate;
+      .ossuary-veil {
+        stroke-dasharray: 2 6 1 5 3 6;
+        animation: stippleDust 16s linear infinite;
       }
       .mortal-thread {
         stroke-dasharray: 60 540;
-        animation: mortalTrace 9s linear infinite;
+        animation: threadLife 9s linear infinite;
       }
-      @keyframes sandFall {
+      @keyframes hourglassShift {
+        0% { opacity: 0.35; stroke: #4e5460; }
+        100% { opacity: 1.0; stroke: #ffffff; }
+      }
+      @keyframes stippleDust {
         from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 360; }
+        to { stroke-dashoffset: 460; }
       }
-      @keyframes ossuaryGloom {
-        0% { opacity: 0.25; }
-        100% { opacity: 0.95; }
-      }
-      @keyframes mortalTrace {
+      @keyframes threadLife {
         from { stroke-dashoffset: 600; }
         to { stroke-dashoffset: 0; }
       }
@@ -68,11 +69,16 @@
     <rect width="960" height="400" fill="url(#s6-vig)" />
     <rect width="960" height="400" fill="url(#s6-scrim)" />
   </g>
-  <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
-  <rect x="6" y="6" width="948" height="388" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="384" rx="8" fill="none" stroke="url(#s6-plat)" stroke-width="1.7" class="mortal-thread" />
-  <rect x="13" y="13" width="934" height="374" rx="6" fill="none" stroke="url(#s6-crimson)" stroke-width="1.2" class="ossuary-breath" />
-  <rect x="16" y="16" width="928" height="368" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="sand-time" stroke-opacity="0.65" />
+  <!-- Historical Danse Macabre Hourglass & Granular Stipple Border -->
+  <rect x="8" y="8" width="944" height="384" rx="8" fill="none" stroke="#21262d" stroke-width="1.2" />
+  <rect x="13" y="13" width="934" height="374" rx="6" fill="none" stroke="url(#s6-crimson)" stroke-width="1.2" class="mortal-thread" />
+  <rect x="16" y="16" width="928" height="368" rx="5" fill="none" stroke="#7c828e" stroke-width="0.8" class="ossuary-veil" />
+
+  <!-- Danse Macabre Hourglass Motifs -->
+  <g class="sandglass-frieze">
+    <path d="M 56 20 H 64 L 56 28 H 64 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 56 372 H 64 L 56 380 H 64 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 106 20 H 114 L 106 28 H 114 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 106 372 H 114 L 106 380 H 114 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 156 20 H 164 L 156 28 H 164 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 156 372 H 164 L 156 380 H 164 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 206 20 H 214 L 206 28 H 214 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 206 372 H 214 L 206 380 H 214 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 256 20 H 264 L 256 28 H 264 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 256 372 H 264 L 256 380 H 264 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 306 20 H 314 L 306 28 H 314 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 306 372 H 314 L 306 380 H 314 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 356 20 H 364 L 356 28 H 364 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 356 372 H 364 L 356 380 H 364 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 406 20 H 414 L 406 28 H 414 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 406 372 H 414 L 406 380 H 414 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 456 20 H 464 L 456 28 H 464 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 456 372 H 464 L 456 380 H 464 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 506 20 H 514 L 506 28 H 514 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 506 372 H 514 L 506 380 H 514 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 556 20 H 564 L 556 28 H 564 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 556 372 H 564 L 556 380 H 564 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 606 20 H 614 L 606 28 H 614 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 606 372 H 614 L 606 380 H 614 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 656 20 H 664 L 656 28 H 664 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 656 372 H 664 L 656 380 H 664 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 706 20 H 714 L 706 28 H 714 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 706 372 H 714 L 706 380 H 714 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 756 20 H 764 L 756 28 H 764 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 756 372 H 764 L 756 380 H 764 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 806 20 H 814 L 806 28 H 814 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 806 372 H 814 L 806 380 H 814 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 856 20 H 864 L 856 28 H 864 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 856 372 H 864 L 856 380 H 864 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 906 20 H 914 L 906 28 H 914 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" /> <path d="M 906 372 H 914 L 906 380 H 914 Z" fill="none" stroke="url(#s6-plat)" stroke-width="0.9" />
+  </g>
+
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s6-plat)" stroke-width="1.1" fill="none" opacity="0.85">

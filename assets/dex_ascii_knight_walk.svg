@@ -37,29 +37,29 @@
     </clipPath>
 
     <style>
-      .pilgrim-step {
-        stroke-dasharray: 160 80 40 80;
-        animation: pilgrimEast 15s linear infinite;
+
+      .fortress-battlement {
+        stroke-dasharray: 144 36;
+        animation: battlementPatrol 18s linear infinite;
       }
-      .lantern-mist {
-        stroke-dasharray: 80 320;
-        animation: lanternDrift 8s ease-in-out infinite alternate;
+      .arrow-slit-glow {
+        animation: beaconGlow 5s ease-in-out infinite alternate;
       }
-      .stone-path {
-        stroke-dasharray: 10 10;
-        animation: pathWest 24s linear infinite reverse;
+      .perimeter-iron {
+        stroke-dasharray: 120 400;
+        animation: ironTrack 10s linear infinite;
       }
-      @keyframes pilgrimEast {
-        from { stroke-dashoffset: 720; }
+      @keyframes battlementPatrol {
+        from { stroke-dashoffset: 360; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes lanternDrift {
-        0% { stroke-dashoffset: 0; opacity: 0.35; }
-        100% { stroke-dashoffset: 400; opacity: 1.0; }
+      @keyframes beaconGlow {
+        0% { opacity: 0.3; }
+        100% { opacity: 0.95; }
       }
-      @keyframes pathWest {
-        from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 400; }
+      @keyframes ironTrack {
+        from { stroke-dashoffset: 1040; }
+        to { stroke-dashoffset: 0; }
       }
     </style>
   </defs>
@@ -69,11 +69,19 @@
     <rect width="960" height="420" fill="url(#s3-vig)" />
     <rect width="960" height="420" fill="url(#s3-scrim)" />
   </g>
-  <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
-  <rect x="6" y="6" width="948" height="408" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="404" rx="8" fill="none" stroke="url(#s3-plat)" stroke-width="1.7" class="pilgrim-step" />
-  <rect x="13" y="13" width="934" height="394" rx="6" fill="none" stroke="url(#s3-crimson)" stroke-width="1.2" class="lantern-mist" />
-  <rect x="16" y="16" width="928" height="388" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="stone-path" stroke-opacity="0.65" />
+  <!-- Historical Medieval Fortress Battlements & Cruciform Arrow Slits -->
+  <rect x="8" y="8" width="944" height="404" rx="8" fill="none" stroke="#1f2328" stroke-width="1.2" />
+  <rect x="14" y="14" width="932" height="392" rx="6" fill="none" stroke="url(#s3-crimson)" stroke-width="1.2" class="perimeter-iron" />
+  
+  <!-- Stone Parapet Battlements -->
+  <path d="M 30.0 22.0 V 13.0 H 48.0 V 22.0 H 66.0 V 13.0 H 84.0 V 22.0 H 102.0 V 13.0 H 120.0 V 22.0 H 138.0 V 13.0 H 156.0 V 22.0 H 174.0 V 13.0 H 192.0 V 22.0 H 210.0 V 13.0 H 228.0 V 22.0 H 246.0 V 13.0 H 264.0 V 22.0 H 282.0 V 13.0 H 300.0 V 22.0 H 318.0 V 13.0 H 336.0 V 22.0 H 354.0 V 13.0 H 372.0 V 22.0 H 390.0 V 13.0 H 408.0 V 22.0 H 426.0 V 13.0 H 444.0 V 22.0 H 462.0 V 13.0 H 480.0 V 22.0 H 498.0 V 13.0 H 516.0 V 22.0 H 534.0 V 13.0 H 552.0 V 22.0 H 570.0 V 13.0 H 588.0 V 22.0 H 606.0 V 13.0 H 624.0 V 22.0 H 642.0 V 13.0 H 660.0 V 22.0 H 678.0 V 13.0 H 696.0 V 22.0 H 714.0 V 13.0 H 732.0 V 22.0 H 750.0 V 13.0 H 768.0 V 22.0 H 786.0 V 13.0 H 804.0 V 22.0 H 822.0 V 13.0 H 840.0 V 22.0 H 858.0 V 13.0 H 876.0 V 22.0 H 894.0 V 13.0 H 912.0 V 22.0 H 930.0" fill="none" stroke="url(#s3-plat)" stroke-width="1.6" class="fortress-battlement" />
+  <path d="M 30.0 398.0 V 407.0 H 48.0 V 398.0 H 66.0 V 407.0 H 84.0 V 398.0 H 102.0 V 407.0 H 120.0 V 398.0 H 138.0 V 407.0 H 156.0 V 398.0 H 174.0 V 407.0 H 192.0 V 398.0 H 210.0 V 407.0 H 228.0 V 398.0 H 246.0 V 407.0 H 264.0 V 398.0 H 282.0 V 407.0 H 300.0 V 398.0 H 318.0 V 407.0 H 336.0 V 398.0 H 354.0 V 407.0 H 372.0 V 398.0 H 390.0 V 407.0 H 408.0 V 398.0 H 426.0 V 407.0 H 444.0 V 398.0 H 462.0 V 407.0 H 480.0 V 398.0 H 498.0 V 407.0 H 516.0 V 398.0 H 534.0 V 407.0 H 552.0 V 398.0 H 570.0 V 407.0 H 588.0 V 398.0 H 606.0 V 407.0 H 624.0 V 398.0 H 642.0 V 407.0 H 660.0 V 398.0 H 678.0 V 407.0 H 696.0 V 398.0 H 714.0 V 407.0 H 732.0 V 398.0 H 750.0 V 407.0 H 768.0 V 398.0 H 786.0 V 407.0 H 804.0 V 398.0 H 822.0 V 407.0 H 840.0 V 398.0 H 858.0 V 407.0 H 876.0 V 398.0 H 894.0 V 407.0 H 912.0 V 398.0 H 930.0" fill="none" stroke="url(#s3-plat)" stroke-width="1.6" class="fortress-battlement" />
+
+  <!-- Cruciform Cross Arrow Slits -->
+  <g class="arrow-slit-glow">
+    <line x1="60" y1="28" x2="60" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="57" y1="32" x2="63" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="60" y1="382" x2="60" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="57" y1="386" x2="63" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="120" y1="28" x2="120" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="117" y1="32" x2="123" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="120" y1="382" x2="120" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="117" y1="386" x2="123" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="180" y1="28" x2="180" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="177" y1="32" x2="183" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="180" y1="382" x2="180" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="177" y1="386" x2="183" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="240" y1="28" x2="240" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="237" y1="32" x2="243" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="240" y1="382" x2="240" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="237" y1="386" x2="243" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="300" y1="28" x2="300" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="297" y1="32" x2="303" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="300" y1="382" x2="300" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="297" y1="386" x2="303" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="360" y1="28" x2="360" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="357" y1="32" x2="363" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="360" y1="382" x2="360" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="357" y1="386" x2="363" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="420" y1="28" x2="420" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="417" y1="32" x2="423" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="420" y1="382" x2="420" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="417" y1="386" x2="423" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="480" y1="28" x2="480" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="477" y1="32" x2="483" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="480" y1="382" x2="480" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="477" y1="386" x2="483" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="540" y1="28" x2="540" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="537" y1="32" x2="543" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="540" y1="382" x2="540" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="537" y1="386" x2="543" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="600" y1="28" x2="600" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="597" y1="32" x2="603" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="600" y1="382" x2="600" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="597" y1="386" x2="603" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="660" y1="28" x2="660" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="657" y1="32" x2="663" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="660" y1="382" x2="660" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="657" y1="386" x2="663" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="720" y1="28" x2="720" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="717" y1="32" x2="723" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="720" y1="382" x2="720" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="717" y1="386" x2="723" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="780" y1="28" x2="780" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="777" y1="32" x2="783" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="780" y1="382" x2="780" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="777" y1="386" x2="783" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="840" y1="28" x2="840" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="837" y1="32" x2="843" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="840" y1="382" x2="840" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="837" y1="386" x2="843" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="900" y1="28" x2="900" y2="38" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="897" y1="32" x2="903" y2="32" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="900" y1="382" x2="900" y2="392" stroke="url(#s3-plat)" stroke-width="1.2" /> <line x1="897" y1="386" x2="903" y2="386" stroke="url(#s3-plat)" stroke-width="1.2" />
+  </g>
+
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s3-plat)" stroke-width="1.1" fill="none" opacity="0.85">

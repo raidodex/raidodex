@@ -37,29 +37,29 @@
     </clipPath>
 
     <style>
-      .regal-march {
-        stroke-dasharray: 240 60 60 60;
-        animation: throneMarch 30s linear infinite;
+
+      .imperial-crown {
+        stroke-dasharray: 56 28;
+        animation: crownProcession 20s linear infinite;
       }
       .mantle-sweep {
-        stroke-dasharray: 150 450;
+        stroke-dasharray: 140 420;
         animation: royalMantle 10s linear infinite;
       }
-      .lattice-flow {
-        stroke-dasharray: 15 5 5 5;
-        animation: imperialLattice 20s linear infinite reverse;
+      .lozenge-pulse {
+        animation: gemGlint 4s ease-in-out infinite alternate;
       }
-      @keyframes throneMarch {
-        from { stroke-dashoffset: 840; }
+      @keyframes crownProcession {
+        from { stroke-dashoffset: 420; }
         to { stroke-dashoffset: 0; }
       }
       @keyframes royalMantle {
-        from { stroke-dashoffset: 600; }
+        from { stroke-dashoffset: 560; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes imperialLattice {
-        from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 400; }
+      @keyframes gemGlint {
+        0% { opacity: 0.35; }
+        100% { opacity: 1.0; }
       }
     </style>
   </defs>
@@ -69,11 +69,19 @@
     <rect width="960" height="420" fill="url(#s9-vig)" />
     <rect width="960" height="420" fill="url(#s9-scrim)" />
   </g>
-  <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
-  <rect x="6" y="6" width="948" height="408" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="404" rx="8" fill="none" stroke="url(#s9-plat)" stroke-width="1.7" class="regal-march" />
-  <rect x="13" y="13" width="934" height="394" rx="6" fill="none" stroke="url(#s9-crimson)" stroke-width="1.2" class="mantle-sweep" />
-  <rect x="16" y="16" width="928" height="388" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="lattice-flow" stroke-opacity="0.65" />
+  <!-- Historical Sovereign Imperial Crown Arches & Diamond Lozenges -->
+  <rect x="8" y="8" width="944" height="404" rx="8" fill="none" stroke="#21262d" stroke-width="1.2" />
+  <rect x="13" y="13" width="934" height="394" rx="6" fill="none" stroke="url(#s9-crimson)" stroke-width="1.4" class="mantle-sweep" />
+
+  <!-- Imperial Crown Arches -->
+  <path d="M 60.0 24.0 Q 60.0 10.0 74.0 10.0 Q 88.0 10.0 88.0 24.0 M 88.0 24.0 Q 88.0 10.0 102.0 10.0 Q 116.0 10.0 116.0 24.0 M 116.0 24.0 Q 116.0 10.0 130.0 10.0 Q 144.0 10.0 144.0 24.0 M 144.0 24.0 Q 144.0 10.0 158.0 10.0 Q 172.0 10.0 172.0 24.0 M 172.0 24.0 Q 172.0 10.0 186.0 10.0 Q 200.0 10.0 200.0 24.0 M 200.0 24.0 Q 200.0 10.0 214.0 10.0 Q 228.0 10.0 228.0 24.0 M 228.0 24.0 Q 228.0 10.0 242.0 10.0 Q 256.0 10.0 256.0 24.0 M 256.0 24.0 Q 256.0 10.0 270.0 10.0 Q 284.0 10.0 284.0 24.0 M 284.0 24.0 Q 284.0 10.0 298.0 10.0 Q 312.0 10.0 312.0 24.0 M 312.0 24.0 Q 312.0 10.0 326.0 10.0 Q 340.0 10.0 340.0 24.0 M 340.0 24.0 Q 340.0 10.0 354.0 10.0 Q 368.0 10.0 368.0 24.0 M 368.0 24.0 Q 368.0 10.0 382.0 10.0 Q 396.0 10.0 396.0 24.0 M 396.0 24.0 Q 396.0 10.0 410.0 10.0 Q 424.0 10.0 424.0 24.0 M 424.0 24.0 Q 424.0 10.0 438.0 10.0 Q 452.0 10.0 452.0 24.0 M 452.0 24.0 Q 452.0 10.0 466.0 10.0 Q 480.0 10.0 480.0 24.0 M 480.0 24.0 Q 480.0 10.0 494.0 10.0 Q 508.0 10.0 508.0 24.0 M 508.0 24.0 Q 508.0 10.0 522.0 10.0 Q 536.0 10.0 536.0 24.0 M 536.0 24.0 Q 536.0 10.0 550.0 10.0 Q 564.0 10.0 564.0 24.0 M 564.0 24.0 Q 564.0 10.0 578.0 10.0 Q 592.0 10.0 592.0 24.0 M 592.0 24.0 Q 592.0 10.0 606.0 10.0 Q 620.0 10.0 620.0 24.0 M 620.0 24.0 Q 620.0 10.0 634.0 10.0 Q 648.0 10.0 648.0 24.0 M 648.0 24.0 Q 648.0 10.0 662.0 10.0 Q 676.0 10.0 676.0 24.0 M 676.0 24.0 Q 676.0 10.0 690.0 10.0 Q 704.0 10.0 704.0 24.0 M 704.0 24.0 Q 704.0 10.0 718.0 10.0 Q 732.0 10.0 732.0 24.0 M 732.0 24.0 Q 732.0 10.0 746.0 10.0 Q 760.0 10.0 760.0 24.0 M 760.0 24.0 Q 760.0 10.0 774.0 10.0 Q 788.0 10.0 788.0 24.0 M 788.0 24.0 Q 788.0 10.0 802.0 10.0 Q 816.0 10.0 816.0 24.0 M 816.0 24.0 Q 816.0 10.0 830.0 10.0 Q 844.0 10.0 844.0 24.0 M 844.0 24.0 Q 844.0 10.0 858.0 10.0 Q 872.0 10.0 872.0 24.0 M 872.0 24.0 Q 872.0 10.0 886.0 10.0 Q 900.0 10.0 900.0 24.0" fill="none" stroke="url(#s9-plat)" stroke-width="1.4" class="imperial-crown" />
+  <path d="M 60.0 396.0 Q 60.0 410.0 74.0 410.0 Q 88.0 410.0 88.0 396.0 M 88.0 396.0 Q 88.0 410.0 102.0 410.0 Q 116.0 410.0 116.0 396.0 M 116.0 396.0 Q 116.0 410.0 130.0 410.0 Q 144.0 410.0 144.0 396.0 M 144.0 396.0 Q 144.0 410.0 158.0 410.0 Q 172.0 410.0 172.0 396.0 M 172.0 396.0 Q 172.0 410.0 186.0 410.0 Q 200.0 410.0 200.0 396.0 M 200.0 396.0 Q 200.0 410.0 214.0 410.0 Q 228.0 410.0 228.0 396.0 M 228.0 396.0 Q 228.0 410.0 242.0 410.0 Q 256.0 410.0 256.0 396.0 M 256.0 396.0 Q 256.0 410.0 270.0 410.0 Q 284.0 410.0 284.0 396.0 M 284.0 396.0 Q 284.0 410.0 298.0 410.0 Q 312.0 410.0 312.0 396.0 M 312.0 396.0 Q 312.0 410.0 326.0 410.0 Q 340.0 410.0 340.0 396.0 M 340.0 396.0 Q 340.0 410.0 354.0 410.0 Q 368.0 410.0 368.0 396.0 M 368.0 396.0 Q 368.0 410.0 382.0 410.0 Q 396.0 410.0 396.0 396.0 M 396.0 396.0 Q 396.0 410.0 410.0 410.0 Q 424.0 410.0 424.0 396.0 M 424.0 396.0 Q 424.0 410.0 438.0 410.0 Q 452.0 410.0 452.0 396.0 M 452.0 396.0 Q 452.0 410.0 466.0 410.0 Q 480.0 410.0 480.0 396.0 M 480.0 396.0 Q 480.0 410.0 494.0 410.0 Q 508.0 410.0 508.0 396.0 M 508.0 396.0 Q 508.0 410.0 522.0 410.0 Q 536.0 410.0 536.0 396.0 M 536.0 396.0 Q 536.0 410.0 550.0 410.0 Q 564.0 410.0 564.0 396.0 M 564.0 396.0 Q 564.0 410.0 578.0 410.0 Q 592.0 410.0 592.0 396.0 M 592.0 396.0 Q 592.0 410.0 606.0 410.0 Q 620.0 410.0 620.0 396.0 M 620.0 396.0 Q 620.0 410.0 634.0 410.0 Q 648.0 410.0 648.0 396.0 M 648.0 396.0 Q 648.0 410.0 662.0 410.0 Q 676.0 410.0 676.0 396.0 M 676.0 396.0 Q 676.0 410.0 690.0 410.0 Q 704.0 410.0 704.0 396.0 M 704.0 396.0 Q 704.0 410.0 718.0 410.0 Q 732.0 410.0 732.0 396.0 M 732.0 396.0 Q 732.0 410.0 746.0 410.0 Q 760.0 410.0 760.0 396.0 M 760.0 396.0 Q 760.0 410.0 774.0 410.0 Q 788.0 410.0 788.0 396.0 M 788.0 396.0 Q 788.0 410.0 802.0 410.0 Q 816.0 410.0 816.0 396.0 M 816.0 396.0 Q 816.0 410.0 830.0 410.0 Q 844.0 410.0 844.0 396.0 M 844.0 396.0 Q 844.0 410.0 858.0 410.0 Q 872.0 410.0 872.0 396.0 M 872.0 396.0 Q 872.0 410.0 886.0 410.0 Q 900.0 410.0 900.0 396.0" fill="none" stroke="url(#s9-plat)" stroke-width="1.4" class="imperial-crown" />
+
+  <!-- Heraldic Diamond Lozenges -->
+  <g class="lozenge-pulse">
+    <polygon points="74,17 79,24 74,31 69,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="74,389 79,396 74,403 69,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="102,17 107,24 102,31 97,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="102,389 107,396 102,403 97,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="130,17 135,24 130,31 125,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="130,389 135,396 130,403 125,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="158,17 163,24 158,31 153,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="158,389 163,396 158,403 153,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="186,17 191,24 186,31 181,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="186,389 191,396 186,403 181,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="214,17 219,24 214,31 209,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="214,389 219,396 214,403 209,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="242,17 247,24 242,31 237,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="242,389 247,396 242,403 237,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="270,17 275,24 270,31 265,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="270,389 275,396 270,403 265,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="298,17 303,24 298,31 293,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="298,389 303,396 298,403 293,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="326,17 331,24 326,31 321,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="326,389 331,396 326,403 321,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="354,17 359,24 354,31 349,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="354,389 359,396 354,403 349,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="382,17 387,24 382,31 377,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="382,389 387,396 382,403 377,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="410,17 415,24 410,31 405,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="410,389 415,396 410,403 405,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="438,17 443,24 438,31 433,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="438,389 443,396 438,403 433,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="466,17 471,24 466,31 461,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="466,389 471,396 466,403 461,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="494,17 499,24 494,31 489,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="494,389 499,396 494,403 489,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="522,17 527,24 522,31 517,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="522,389 527,396 522,403 517,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="550,17 555,24 550,31 545,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="550,389 555,396 550,403 545,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="578,17 583,24 578,31 573,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="578,389 583,396 578,403 573,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="606,17 611,24 606,31 601,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="606,389 611,396 606,403 601,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="634,17 639,24 634,31 629,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="634,389 639,396 634,403 629,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="662,17 667,24 662,31 657,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="662,389 667,396 662,403 657,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="690,17 695,24 690,31 685,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="690,389 695,396 690,403 685,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="718,17 723,24 718,31 713,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="718,389 723,396 718,403 713,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="746,17 751,24 746,31 741,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="746,389 751,396 746,403 741,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="774,17 779,24 774,31 769,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="774,389 779,396 774,403 769,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="802,17 807,24 802,31 797,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="802,389 807,396 802,403 797,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="830,17 835,24 830,31 825,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="830,389 835,396 830,403 825,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="858,17 863,24 858,31 853,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="858,389 863,396 858,403 853,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="886,17 891,24 886,31 881,24" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" /> <polygon points="886,389 891,396 886,403 881,396" fill="none" stroke="url(#s9-plat)" stroke-width="0.9" />
+  </g>
+
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s9-plat)" stroke-width="1.1" fill="none" opacity="0.85">

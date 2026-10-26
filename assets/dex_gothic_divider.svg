@@ -37,28 +37,28 @@
     </clipPath>
 
     <style>
-      .bramble-bloom {
-        stroke-dasharray: 160 80;
-        animation: bloomExpand 8.5s ease-in-out infinite alternate;
+
+      .bramble-stem {
+        stroke-dasharray: 120 40;
+        animation: vineCreep 15s linear infinite;
       }
-      .creeping-thorn {
-        stroke-dasharray: 8 6 16 6;
-        animation: thornMarch 19s linear infinite;
+      .bramble-thorn {
+        animation: thornGleam 4s ease-in-out infinite alternate;
       }
-      .lamb-halo {
-        animation: gentleBreathe 5s ease-in-out infinite alternate;
+      .s13-rotating-rose {
+        animation: dividerRoseSpin 30s linear infinite;
       }
-      @keyframes bloomExpand {
-        0% { stroke-dashoffset: 0; }
-        100% { stroke-dashoffset: 480; }
-      }
-      @keyframes thornMarch {
-        from { stroke-dashoffset: 480; }
+      @keyframes vineCreep {
+        from { stroke-dashoffset: 320; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes gentleBreathe {
-        0% { opacity: 0.35; }
-        100% { opacity: 0.9; }
+      @keyframes thornGleam {
+        0% { opacity: 0.35; stroke: #8b181e; }
+        100% { opacity: 1.0; stroke: #ffffff; }
+      }
+      @keyframes dividerRoseSpin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
       }
     </style>
   </defs>
@@ -68,11 +68,55 @@
     <rect width="960" height="220" fill="url(#s13-vig)" />
     <rect width="960" height="220" fill="url(#s13-scrim)" />
   </g>
-  <!-- Animated Perimeter Boundary Frame -->
-  <rect x="6" y="6" width="948" height="208" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="204" rx="8" fill="none" stroke="url(#s13-plat)" stroke-width="1.7" class="bramble-bloom" />
-  <rect x="13" y="13" width="934" height="194" rx="6" fill="none" stroke="url(#s13-crimson)" stroke-width="1.2" class="lamb-halo" />
-  <rect x="16" y="16" width="928" height="188" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="creeping-thorn" />
+  <!-- Historical Woodcut Thorny Bramble Vine & Rose Tendril Border -->
+  <rect x="8" y="8" width="944" height="204" rx="8" fill="none" stroke="#21262d" stroke-width="1.2" />
+
+  <!-- Sinuous Bramble Stem & Thorns Top -->
+  <path d="M 40.0 16.0 L 50.0 20.0 L 60.0 16.0 L 70.0 12.0 L 80.0 16.0 L 90.0 20.0 L 100.0 16.0 L 110.0 12.0 L 120.0 16.0 L 130.0 20.0 L 140.0 16.0 L 150.0 12.0 L 160.0 16.0 L 170.0 20.0 L 180.0 16.0 L 190.0 12.0 L 200.0 16.0 L 210.0 20.0 L 220.0 16.0 L 230.0 12.0 L 240.0 16.0 L 250.0 20.0 L 260.0 16.0 L 270.0 12.0 L 280.0 16.0 L 290.0 20.0 L 300.0 16.0 L 310.0 12.0 L 320.0 16.0 L 330.0 20.0 L 340.0 16.0 L 350.0 12.0 L 360.0 16.0 L 370.0 20.0 L 380.0 16.0 L 390.0 12.0 L 400.0 16.0 L 410.0 20.0 L 420.0 16.0 L 430.0 12.0 L 440.0 16.0 L 450.0 20.0 L 460.0 16.0 L 470.0 12.0 L 480.0 16.0 L 490.0 20.0 L 500.0 16.0 L 510.0 12.0 L 520.0 16.0 L 530.0 20.0 L 540.0 16.0 L 550.0 12.0 L 560.0 16.0 L 570.0 20.0 L 580.0 16.0 L 590.0 12.0 L 600.0 16.0 L 610.0 20.0 L 620.0 16.0 L 630.0 12.0 L 640.0 16.0 L 650.0 20.0 L 660.0 16.0 L 670.0 12.0 L 680.0 16.0 L 690.0 20.0 L 700.0 16.0 L 710.0 12.0 L 720.0 16.0 L 730.0 20.0 L 740.0 16.0 L 750.0 12.0 L 760.0 16.0 L 770.0 20.0 L 780.0 16.0 L 790.0 12.0 L 800.0 16.0 L 810.0 20.0 L 820.0 16.0 L 830.0 12.0 L 840.0 16.0 L 850.0 20.0 L 860.0 16.0 L 870.0 12.0 L 880.0 16.0 L 890.0 20.0 L 900.0 16.0 L 910.0 12.0 L 920.0 16.0" fill="none" stroke="url(#s13-plat)" stroke-width="1.3" class="bramble-stem" />
+  <path d="M 60.0 16.0 L 62.0 22.0 M 100.0 16.0 L 102.0 10.0 M 140.0 16.0 L 142.0 22.0 M 180.0 16.0 L 182.0 10.0 M 220.0 16.0 L 222.0 22.0 M 260.0 16.0 L 262.0 10.0 M 300.0 16.0 L 302.0 22.0 M 340.0 16.0 L 342.0 10.0 M 380.0 16.0 L 382.0 22.0 M 420.0 16.0 L 422.0 10.0 M 460.0 16.0 L 462.0 22.0 M 500.0 16.0 L 502.0 10.0 M 540.0 16.0 L 542.0 22.0 M 580.0 16.0 L 582.0 10.0 M 620.0 16.0 L 622.0 22.0 M 660.0 16.0 L 662.0 10.0 M 700.0 16.0 L 702.0 22.0 M 740.0 16.0 L 742.0 10.0 M 780.0 16.0 L 782.0 22.0 M 820.0 16.0 L 822.0 10.0 M 860.0 16.0 L 862.0 22.0 M 900.0 16.0 L 902.0 10.0" stroke="url(#s13-crimson)" stroke-width="1.2" class="bramble-thorn" />
+
+  <!-- Sinuous Bramble Stem & Thorns Bottom -->
+  <path d="M 40.0 204.0 L 50.0 208.0 L 60.0 204.0 L 70.0 200.0 L 80.0 204.0 L 90.0 208.0 L 100.0 204.0 L 110.0 200.0 L 120.0 204.0 L 130.0 208.0 L 140.0 204.0 L 150.0 200.0 L 160.0 204.0 L 170.0 208.0 L 180.0 204.0 L 190.0 200.0 L 200.0 204.0 L 210.0 208.0 L 220.0 204.0 L 230.0 200.0 L 240.0 204.0 L 250.0 208.0 L 260.0 204.0 L 270.0 200.0 L 280.0 204.0 L 290.0 208.0 L 300.0 204.0 L 310.0 200.0 L 320.0 204.0 L 330.0 208.0 L 340.0 204.0 L 350.0 200.0 L 360.0 204.0 L 370.0 208.0 L 380.0 204.0 L 390.0 200.0 L 400.0 204.0 L 410.0 208.0 L 420.0 204.0 L 430.0 200.0 L 440.0 204.0 L 450.0 208.0 L 460.0 204.0 L 470.0 200.0 L 480.0 204.0 L 490.0 208.0 L 500.0 204.0 L 510.0 200.0 L 520.0 204.0 L 530.0 208.0 L 540.0 204.0 L 550.0 200.0 L 560.0 204.0 L 570.0 208.0 L 580.0 204.0 L 590.0 200.0 L 600.0 204.0 L 610.0 208.0 L 620.0 204.0 L 630.0 200.0 L 640.0 204.0 L 650.0 208.0 L 660.0 204.0 L 670.0 200.0 L 680.0 204.0 L 690.0 208.0 L 700.0 204.0 L 710.0 200.0 L 720.0 204.0 L 730.0 208.0 L 740.0 204.0 L 750.0 200.0 L 760.0 204.0 L 770.0 208.0 L 780.0 204.0 L 790.0 200.0 L 800.0 204.0 L 810.0 208.0 L 820.0 204.0 L 830.0 200.0 L 840.0 204.0 L 850.0 208.0 L 860.0 204.0 L 870.0 200.0 L 880.0 204.0 L 890.0 208.0 L 900.0 204.0 L 910.0 200.0 L 920.0 204.0" fill="none" stroke="url(#s13-plat)" stroke-width="1.3" class="bramble-stem" />
+  <path d="M 60.0 204.0 L 62.0 210.0 M 100.0 204.0 L 102.0 198.0 M 140.0 204.0 L 142.0 210.0 M 180.0 204.0 L 182.0 198.0 M 220.0 204.0 L 222.0 210.0 M 260.0 204.0 L 262.0 198.0 M 300.0 204.0 L 302.0 210.0 M 340.0 204.0 L 342.0 198.0 M 380.0 204.0 L 382.0 210.0 M 420.0 204.0 L 422.0 198.0 M 460.0 204.0 L 462.0 210.0 M 500.0 204.0 L 502.0 198.0 M 540.0 204.0 L 542.0 210.0 M 580.0 204.0 L 582.0 198.0 M 620.0 204.0 L 622.0 210.0 M 660.0 204.0 L 662.0 198.0 M 700.0 204.0 L 702.0 210.0 M 740.0 204.0 L 742.0 198.0 M 780.0 204.0 L 782.0 210.0 M 820.0 204.0 L 822.0 198.0 M 860.0 204.0 L 862.0 210.0 M 900.0 204.0 L 902.0 198.0" stroke="url(#s13-crimson)" stroke-width="1.2" class="bramble-thorn" />
+
+  <!-- Corner Gothic Rose Medallions -->
+  
+    <g class="s13-rotating-rose" style="transform-origin: 30px 30px;">
+      <circle cx="30" cy="30" r="16" fill="#0d1117" stroke="url(#s13-plat)" stroke-width="1.2" />
+      <circle cx="30" cy="30" r="13.6" fill="none" stroke="url(#s13-crimson)" stroke-width="0.8" />
+      <circle cx="30" cy="30" r="5.6" fill="#161b22" stroke="url(#s13-plat)" stroke-width="1.0" />
+      <circle cx="30" cy="30" r="3" fill="url(#s13-plat)" />
+      <path d="M 35.6 30.0 L 43.6 30.0 M 34.0 34.0 L 39.6 39.6 M 30.0 35.6 L 30.0 43.6 M 26.0 34.0 L 20.4 39.6 M 24.4 30.0 L 16.4 30.0 M 26.0 26.0 L 20.4 20.4 M 30.0 24.4 L 30.0 16.4 M 34.0 26.0 L 39.6 20.4" stroke="url(#s13-plat)" stroke-width="0.75" />
+      <path d="M 43.6 30.0 Q 42.6 35.2 39.6 39.6 M 39.6 39.6 Q 35.2 42.6 30.0 43.6 M 30.0 43.6 Q 24.8 42.6 20.4 39.6 M 20.4 39.6 Q 17.4 35.2 16.4 30.0 M 16.4 30.0 Q 17.4 24.8 20.4 20.4 M 20.4 20.4 Q 24.8 17.4 30.0 16.4 M 30.0 16.4 Q 35.2 17.4 39.6 20.4 M 39.6 20.4 Q 42.6 24.8 43.6 30.0" stroke="url(#s13-plat)" stroke-width="0.9" fill="none" />
+    </g>
+  
+    <g class="s13-rotating-rose" style="transform-origin: 930px 30px;">
+      <circle cx="930" cy="30" r="16" fill="#0d1117" stroke="url(#s13-plat)" stroke-width="1.2" />
+      <circle cx="930" cy="30" r="13.6" fill="none" stroke="url(#s13-crimson)" stroke-width="0.8" />
+      <circle cx="930" cy="30" r="5.6" fill="#161b22" stroke="url(#s13-plat)" stroke-width="1.0" />
+      <circle cx="930" cy="30" r="3" fill="url(#s13-plat)" />
+      <path d="M 935.6 30.0 L 943.6 30.0 M 934.0 34.0 L 939.6 39.6 M 930.0 35.6 L 930.0 43.6 M 926.0 34.0 L 920.4 39.6 M 924.4 30.0 L 916.4 30.0 M 926.0 26.0 L 920.4 20.4 M 930.0 24.4 L 930.0 16.4 M 934.0 26.0 L 939.6 20.4" stroke="url(#s13-plat)" stroke-width="0.75" />
+      <path d="M 943.6 30.0 Q 942.6 35.2 939.6 39.6 M 939.6 39.6 Q 935.2 42.6 930.0 43.6 M 930.0 43.6 Q 924.8 42.6 920.4 39.6 M 920.4 39.6 Q 917.4 35.2 916.4 30.0 M 916.4 30.0 Q 917.4 24.8 920.4 20.4 M 920.4 20.4 Q 924.8 17.4 930.0 16.4 M 930.0 16.4 Q 935.2 17.4 939.6 20.4 M 939.6 20.4 Q 942.6 24.8 943.6 30.0" stroke="url(#s13-plat)" stroke-width="0.9" fill="none" />
+    </g>
+  
+    <g class="s13-rotating-rose" style="transform-origin: 30px 190px;">
+      <circle cx="30" cy="190" r="16" fill="#0d1117" stroke="url(#s13-plat)" stroke-width="1.2" />
+      <circle cx="30" cy="190" r="13.6" fill="none" stroke="url(#s13-crimson)" stroke-width="0.8" />
+      <circle cx="30" cy="190" r="5.6" fill="#161b22" stroke="url(#s13-plat)" stroke-width="1.0" />
+      <circle cx="30" cy="190" r="3" fill="url(#s13-plat)" />
+      <path d="M 35.6 190.0 L 43.6 190.0 M 34.0 194.0 L 39.6 199.6 M 30.0 195.6 L 30.0 203.6 M 26.0 194.0 L 20.4 199.6 M 24.4 190.0 L 16.4 190.0 M 26.0 186.0 L 20.4 180.4 M 30.0 184.4 L 30.0 176.4 M 34.0 186.0 L 39.6 180.4" stroke="url(#s13-plat)" stroke-width="0.75" />
+      <path d="M 43.6 190.0 Q 42.6 195.2 39.6 199.6 M 39.6 199.6 Q 35.2 202.6 30.0 203.6 M 30.0 203.6 Q 24.8 202.6 20.4 199.6 M 20.4 199.6 Q 17.4 195.2 16.4 190.0 M 16.4 190.0 Q 17.4 184.8 20.4 180.4 M 20.4 180.4 Q 24.8 177.4 30.0 176.4 M 30.0 176.4 Q 35.2 177.4 39.6 180.4 M 39.6 180.4 Q 42.6 184.8 43.6 190.0" stroke="url(#s13-plat)" stroke-width="0.9" fill="none" />
+    </g>
+  
+    <g class="s13-rotating-rose" style="transform-origin: 930px 190px;">
+      <circle cx="930" cy="190" r="16" fill="#0d1117" stroke="url(#s13-plat)" stroke-width="1.2" />
+      <circle cx="930" cy="190" r="13.6" fill="none" stroke="url(#s13-crimson)" stroke-width="0.8" />
+      <circle cx="930" cy="190" r="5.6" fill="#161b22" stroke="url(#s13-plat)" stroke-width="1.0" />
+      <circle cx="930" cy="190" r="3" fill="url(#s13-plat)" />
+      <path d="M 935.6 190.0 L 943.6 190.0 M 934.0 194.0 L 939.6 199.6 M 930.0 195.6 L 930.0 203.6 M 926.0 194.0 L 920.4 199.6 M 924.4 190.0 L 916.4 190.0 M 926.0 186.0 L 920.4 180.4 M 930.0 184.4 L 930.0 176.4 M 934.0 186.0 L 939.6 180.4" stroke="url(#s13-plat)" stroke-width="0.75" />
+      <path d="M 943.6 190.0 Q 942.6 195.2 939.6 199.6 M 939.6 199.6 Q 935.2 202.6 930.0 203.6 M 930.0 203.6 Q 924.8 202.6 920.4 199.6 M 920.4 199.6 Q 917.4 195.2 916.4 190.0 M 916.4 190.0 Q 917.4 184.8 920.4 180.4 M 920.4 180.4 Q 924.8 177.4 930.0 176.4 M 930.0 176.4 Q 935.2 177.4 939.6 180.4 M 939.6 180.4 Q 942.6 184.8 943.6 190.0" stroke="url(#s13-plat)" stroke-width="0.9" fill="none" />
+    </g>
+
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s13-plat)" stroke-width="1.1" fill="none" opacity="0.85">
