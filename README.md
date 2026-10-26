@@ -22,6 +22,17 @@
 
 <br/>
 
+<p align="center">
+  <a href="#the-helm"><code>⚔️ The Helm</code></a> &nbsp;•&nbsp;
+  <a href="#the-triptych"><code>🗡️ The Triptych</code></a> &nbsp;•&nbsp;
+  <a href="#the-codex"><code>🥀 The Codex</code></a> &nbsp;•&nbsp;
+  <a href="#the-tenets"><code>📜 The Tenets</code></a> &nbsp;•&nbsp;
+  <a href="#memento-mori"><code>💀 Memento Mori</code></a> &nbsp;•&nbsp;
+  <a href="#the-hymns"><code>🎻 The Hymns</code></a> &nbsp;•&nbsp;
+  <a href="#the-apocrypha"><code>📖 The Apocrypha</code></a> &nbsp;•&nbsp;
+  <a href="#the-sanctuary"><code>🏰 Sanctuary</code></a>
+</p>
+
 > *“Throughout the night, no need to fight — on her ship, tied to the mast...”*  
 > *“We were both young when I first saw you... standing there on a balcony in summer air.”*
 
@@ -29,6 +40,20 @@
 
 <br/>
 
+<!-- ========================================================================================= -->
+<!--                            COLD-IRON GOTHIC FRIEZE DIVIDER                                -->
+<!-- ========================================================================================= -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/dex_gothic_divider.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/dex_gothic_divider.svg">
+    <img alt="Cold-Iron Gothic Frieze — Sword, Thorns & Sleeping Lambs" src="./assets/dex_gothic_divider.svg" width="100%">
+  </picture>
+</div>
+
+<br/>
+
+<a id="the-helm"></a>
 ## `I.` ⚔️ The Silence Beneath the Great Helm
 
 Look closely at the knight who kneels in the pitch-black nave. A scarred broadsword is strapped across his back, and a jagged iron halo of thorns hangs above his brow—yet **two small lambs sleep unafraid against his armored knees**.
@@ -54,6 +79,7 @@ My soul is tuned to two eternal frequencies: the **13/8 harpsichord trance of *G
 
 <br/>
 
+<a id="the-triptych"></a>
 ## `II.` 🗡️ The Three Engravings — *Loyalty, Honor & Devotion*
 
 <!-- ========================================================================================= -->
@@ -100,6 +126,7 @@ My soul is tuned to two eternal frequencies: the **13/8 harpsichord trance of *G
 
 <br/>
 
+<a id="the-codex"></a>
 ## `III.` 🥀 The Obsidian Codex — *The Blade & The Five-Petaled Rose*
 
 <!-- ========================================================================================= -->
@@ -115,7 +142,34 @@ My soul is tuned to two eternal frequencies: the **13/8 harpsichord trance of *G
 
 <br/>
 
+<!-- ========================================================================================= -->
+<!--                            COLD-IRON GOTHIC FRIEZE DIVIDER                                -->
+<!-- ========================================================================================= -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/dex_gothic_divider.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/dex_gothic_divider.svg">
+    <img alt="Cold-Iron Gothic Frieze — Sword, Thorns & Sleeping Lambs" src="./assets/dex_gothic_divider.svg" width="100%">
+  </picture>
+</div>
+
+<br/>
+
+<a id="the-tenets"></a>
 ## `IV.` 📜 The Six Tenets of the Obsidian Vigil
+
+<!-- ========================================================================================= -->
+<!--      SVG XI. THE SIX TENETS (SOLITARY KNIGHT KNEELING BEFORE THE MOONLIT ALTAR SVG)       -->
+<!-- ========================================================================================= -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/dex_tenets_vigil.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/dex_tenets_vigil.svg">
+    <img alt="The Six Tenets of the Obsidian Vigil — Solitary Knight Kneeling Before the Moonlit Altar" src="./assets/dex_tenets_vigil.svg" width="100%">
+  </picture>
+</div>
+
+<br/>
 
 1. **⚔️ The Broadsword Exists Only for the Sleeping Lambs.** Power without mercy is monsterhood. You wear the heavy mail, endure the freezing rain, and carry the steel across your back for one reason alone: so that what is innocent, gentle, and sacred may rest beside you without fear.
 2. **🩸 Loyalty Is a Covenant Written in Bone, Not Ink.** Fair-weather allies calculate the cost before they draw their sword. When I give my word, the calculation is over—come siege, famine, or exile, the banner does not come down.
@@ -126,6 +180,7 @@ My soul is tuned to two eternal frequencies: the **13/8 harpsichord trance of *G
 
 <br/>
 
+<a id="memento-mori"></a>
 ## `V.` 💀 The Final Interrogation — *Memento Mori*
 
 <!-- ========================================================================================= -->
@@ -141,6 +196,7 @@ My soul is tuned to two eternal frequencies: the **13/8 harpsichord trance of *G
 
 <br/>
 
+<a id="the-hymns"></a>
 ## `VI.` 🎻 The Two Hymns of the Sanctuary *(13/8 & The Balcony)*
 
 <!-- ========================================================================================= -->
@@ -158,6 +214,11 @@ My soul is tuned to two eternal frequencies: the **13/8 harpsichord trance of *G
 
 > *“Every time, just like the last / On her ship, tied to the mast / To distant lands, takes both my hands...”*  
 > There is an hour between midnight and dawn when the noise of the century dies away. That is the hour of the harpsichord—a state of serene, unshakeable clarity where time shifts out of the common march into a timeless waltz, and the soul remembers what it was built to endure.
+
+<p align="center">
+  <a href="https://open.spotify.com/track/2AX5E86cxQfmUsBkKc4KNv"><code>▶️ Spotify: The Stranglers — Golden Brown</code></a> &nbsp;•&nbsp;
+  <a href="https://www.youtube.com/results?search_query=the+stranglers+golden+brown+official+video"><code>🏛️ YouTube: The 13/8 Harpsichord Sanctuary</code></a>
+</p>
 
 <br/>
 
@@ -177,9 +238,77 @@ My soul is tuned to two eternal frequencies: the **13/8 harpsichord trance of *G
 > *“Romeo, take me somewhere we can be alone / I’ll be waiting, all there’s left to do is run / You’ll be the prince and I’ll be the princess...”*  
 > Beneath every suit of blackened plate armor beats the oldest story in human memory: the refusal to let fear, exile, or forbidden gates sever a sworn devotion. A knight without romance is merely a mercenary; it is the promise waiting on the castle balcony that turns cold steel into a sacred calling.
 
+<p align="center">
+  <a href="https://open.spotify.com/track/1D4PL9B8gOgVN8Fvzgv9S1"><code>▶️ Spotify: Taylor Swift — Love Story</code></a> &nbsp;•&nbsp;
+  <a href="https://www.youtube.com/results?search_query=taylor+swift+love+story+official+music+video"><code>🏰 YouTube: The Verona Balcony Defiance</code></a>
+</p>
+
 <br/>
 
-## `VII.` 🏰 The Sovereign Vigil & The Final Rest of the Blade
+<a id="the-apocrypha"></a>
+## `VII.` 📖 The Sealed Apocrypha of the Unspoken Vow
+
+<details>
+  <summary><b>📜 <i>Click to Break the Wax Seal & Unroll the Ancient Parchment...</i></b></summary>
+  <br/>
+
+<!-- ========================================================================================= -->
+<!--       SVG XII. THE ANCIENT GRIMOIRE (CODEX OF ILLUMINATED SIGILS & ROSE SVG)             -->
+<!-- ========================================================================================= -->
+  <div align="center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/dex_grimoire_codex.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/dex_grimoire_codex.svg">
+      <img alt="The Sealed Grimoire of the Ancient Oath — Illuminated Folio & Thorny Wild Rose" src="./assets/dex_grimoire_codex.svg" width="100%">
+    </picture>
+  </div>
+
+  <br/>
+
+  <blockquote>
+    <p><b>From the Marginalia of the Iron Psalter:</b><br/>
+    <i>“There are promises that can never be spoken in the daylight of courts, lest the pretenders demand their tribute. We carve them into bone beneath the gauntlet. We sing them in the cadence of fifteen beats where the world only counts twelve. When the fortress falls and the banners burn, look not to the gilded crown in the dust, but to the lantern burning in the high turret window. That is where the oath endures—unyielding, unstained, and eternal.”</i></p>
+  </blockquote>
+
+  <table width="100%">
+    <thead>
+      <tr>
+        <th align="center" width="50%">🕯️ The Silent Watch</th>
+        <th align="center" width="50%">🩸 The Unbroken Seal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td valign="top" align="center">
+          <i>“While the citadel sleeps, the iron halo keeps watch against the abyss.”</i><br/><br/>
+          No compromise with falsehood. No quarter given to betrayal. Let the winter storm strike the stone—the lamp remains lit.
+        </td>
+        <td valign="top" align="center">
+          <i>“Written in cold steel, sealed in red wax, remembered unto the dust.”</i><br/><br/>
+          To protect what is innocent, to love what is true, and to stand immovable when all others turn away.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+
+<br/>
+
+<!-- ========================================================================================= -->
+<!--                            COLD-IRON GOTHIC FRIEZE DIVIDER                                -->
+<!-- ========================================================================================= -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/dex_gothic_divider.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/dex_gothic_divider.svg">
+    <img alt="Cold-Iron Gothic Frieze — Sword, Thorns & Sleeping Lambs" src="./assets/dex_gothic_divider.svg" width="100%">
+  </picture>
+</div>
+
+<br/>
+
+<a id="the-sanctuary"></a>
+## `VIII.` 🏰 The Sovereign Vigil & The Final Rest of the Blade
 
 <!-- ========================================================================================= -->
 <!--       SVG IX. THE FALLEN THRONE (ENTHRONED WINGED KNIGHT-KING WOODCUT SVG)                -->
