@@ -37,28 +37,28 @@
     </clipPath>
 
     <style>
-      .outer-flow {
-        stroke-dasharray: 220 40;
-        animation: flowCW 18s linear infinite;
+      .hymn-138 {
+        stroke-dasharray: 39 13 26 13 13 26;
+        animation: harpsichordWave 13s linear infinite;
       }
-      .inner-march {
-        stroke-dasharray: 12 6;
-        animation: flowCCW 24s linear infinite;
+      .ocean-swell {
+        stroke-dasharray: 120 360;
+        animation: mastSway 6.5s ease-in-out infinite alternate;
       }
-      .crimson-trace {
-        stroke-dasharray: 140 340;
-        animation: traceLoop 10s linear infinite;
+      .quill-cascade {
+        stroke-dasharray: 6 6 18 6;
+        animation: quillPluck 9.75s linear infinite;
       }
-      @keyframes flowCW {
-        from { stroke-dashoffset: 520; }
+      @keyframes harpsichordWave {
+        from { stroke-dashoffset: 650; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes flowCCW {
-        from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 360; }
+      @keyframes mastSway {
+        0% { stroke-dashoffset: 0; opacity: 0.4; }
+        100% { stroke-dashoffset: 480; opacity: 1.0; }
       }
-      @keyframes traceLoop {
-        from { stroke-dashoffset: 960; }
+      @keyframes quillPluck {
+        from { stroke-dashoffset: 390; }
         to { stroke-dashoffset: 0; }
       }
     </style>
@@ -71,9 +71,9 @@
   </g>
   <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
   <rect x="6" y="6" width="948" height="408" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="404" rx="8" fill="none" stroke="url(#s7-plat)" stroke-width="1.7" class="outer-flow" />
-  <rect x="13" y="13" width="934" height="394" rx="6" fill="none" stroke="url(#s7-crimson)" stroke-width="1.2" class="crimson-trace" />
-  <rect x="16" y="16" width="928" height="388" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="inner-march" stroke-opacity="0.65" />
+  <rect x="8" y="8" width="944" height="404" rx="8" fill="none" stroke="url(#s7-plat)" stroke-width="1.7" class="hymn-138" />
+  <rect x="13" y="13" width="934" height="394" rx="6" fill="none" stroke="url(#s7-crimson)" stroke-width="1.2" class="ocean-swell" />
+  <rect x="16" y="16" width="928" height="388" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="quill-cascade" stroke-opacity="0.65" />
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s7-plat)" stroke-width="1.1" fill="none" opacity="0.85">

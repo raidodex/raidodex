@@ -37,29 +37,28 @@
     </clipPath>
 
     <style>
-      .outer-flow {
-        stroke-dasharray: 220 40;
-        animation: flowCW 18s linear infinite;
+      .lily-drift {
+        stroke-dasharray: 70 280;
+        animation: lilyRest 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
-      .inner-march {
-        stroke-dasharray: 12 6;
-        animation: flowCCW 24s linear infinite;
+      .crimson-seal {
+        animation: waxGaze 5s ease-in-out infinite alternate;
       }
-      .crimson-trace {
-        stroke-dasharray: 140 340;
-        animation: traceLoop 10s linear infinite;
+      .gentle-peace {
+        stroke-dasharray: 14 14;
+        animation: eternalRest 32s linear infinite reverse;
       }
-      @keyframes flowCW {
-        from { stroke-dashoffset: 520; }
+      @keyframes lilyRest {
+        from { stroke-dashoffset: 700; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes flowCCW {
+      @keyframes waxGaze {
+        0% { opacity: 0.45; }
+        100% { opacity: 0.95; }
+      }
+      @keyframes eternalRest {
         from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 360; }
-      }
-      @keyframes traceLoop {
-        from { stroke-dashoffset: 960; }
-        to { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 280; }
       }
     </style>
   </defs>
@@ -71,9 +70,9 @@
   </g>
   <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
   <rect x="6" y="6" width="948" height="328" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="324" rx="8" fill="none" stroke="url(#s10-plat)" stroke-width="1.7" class="outer-flow" />
-  <rect x="13" y="13" width="934" height="314" rx="6" fill="none" stroke="url(#s10-crimson)" stroke-width="1.2" class="crimson-trace" />
-  <rect x="16" y="16" width="928" height="308" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="inner-march" stroke-opacity="0.65" />
+  <rect x="8" y="8" width="944" height="324" rx="8" fill="none" stroke="url(#s10-plat)" stroke-width="1.7" class="lily-drift" />
+  <rect x="13" y="13" width="934" height="314" rx="6" fill="none" stroke="url(#s10-crimson)" stroke-width="1.2" class="crimson-seal" />
+  <rect x="16" y="16" width="928" height="308" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="gentle-peace" stroke-opacity="0.65" />
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s10-plat)" stroke-width="1.1" fill="none" opacity="0.85">

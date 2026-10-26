@@ -37,28 +37,28 @@
     </clipPath>
 
     <style>
-      .outer-flow {
-        stroke-dasharray: 220 40;
-        animation: flowCW 18s linear infinite;
+      .oath-138 {
+        stroke-dasharray: 26 13 8 13 52 26;
+        animation: cadence138 13s linear infinite;
       }
-      .inner-march {
-        stroke-dasharray: 12 6;
-        animation: flowCCW 24s linear infinite;
+      .oath-counter {
+        stroke-dasharray: 130 390;
+        animation: counterOath 18s linear infinite reverse;
       }
-      .crimson-trace {
-        stroke-dasharray: 140 340;
-        animation: traceLoop 10s linear infinite;
+      .oath-staccato {
+        stroke-dasharray: 4 8 2 8;
+        animation: staccatoMarch 11s linear infinite;
       }
-      @keyframes flowCW {
+      @keyframes cadence138 {
         from { stroke-dashoffset: 520; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes flowCCW {
+      @keyframes counterOath {
         from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 360; }
+        to { stroke-dashoffset: 520; }
       }
-      @keyframes traceLoop {
-        from { stroke-dashoffset: 960; }
+      @keyframes staccatoMarch {
+        from { stroke-dashoffset: 220; }
         to { stroke-dashoffset: 0; }
       }
     </style>
@@ -70,9 +70,9 @@
   </g>
   <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
   <rect x="6" y="6" width="948" height="228" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="224" rx="8" fill="none" stroke="url(#s2-plat)" stroke-width="1.7" class="outer-flow" />
-  <rect x="13" y="13" width="934" height="214" rx="6" fill="none" stroke="url(#s2-crimson)" stroke-width="1.2" class="crimson-trace" />
-  <rect x="16" y="16" width="928" height="208" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="inner-march" stroke-opacity="0.65" />
+  <rect x="8" y="8" width="944" height="224" rx="8" fill="none" stroke="url(#s2-plat)" stroke-width="1.7" class="oath-138" />
+  <rect x="13" y="13" width="934" height="214" rx="6" fill="none" stroke="url(#s2-crimson)" stroke-width="1.2" class="oath-counter" />
+  <rect x="16" y="16" width="928" height="208" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="oath-staccato" stroke-opacity="0.65" />
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s2-plat)" stroke-width="1.1" fill="none" opacity="0.85">

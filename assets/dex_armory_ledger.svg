@@ -37,29 +37,28 @@
     </clipPath>
 
     <style>
-      .outer-flow {
-        stroke-dasharray: 220 40;
-        animation: flowCW 18s linear infinite;
+      .blade-glint {
+        stroke-dasharray: 50 650;
+        animation: glintSlash 4.8s cubic-bezier(0.2, 0.9, 0.3, 1) infinite;
       }
-      .inner-march {
-        stroke-dasharray: 12 6;
-        animation: flowCCW 24s linear infinite;
+      .serrated-edge {
+        stroke-dasharray: 5 3 10 3;
+        animation: bladeSaw 15s linear infinite reverse;
       }
-      .crimson-trace {
-        stroke-dasharray: 140 340;
-        animation: traceLoop 10s linear infinite;
+      .blood-fuller {
+        animation: fullerPulse 4s ease-in-out infinite alternate;
       }
-      @keyframes flowCW {
-        from { stroke-dashoffset: 520; }
+      @keyframes glintSlash {
+        from { stroke-dashoffset: 1400; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes flowCCW {
+      @keyframes bladeSaw {
         from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 360; }
+        to { stroke-dashoffset: 420; }
       }
-      @keyframes traceLoop {
-        from { stroke-dashoffset: 960; }
-        to { stroke-dashoffset: 0; }
+      @keyframes fullerPulse {
+        0% { opacity: 0.4; }
+        100% { opacity: 1.0; }
       }
     </style>
   </defs>
@@ -72,9 +71,9 @@
   </g>
   <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
   <rect x="6" y="6" width="948" height="368" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="364" rx="8" fill="none" stroke="url(#s5-plat)" stroke-width="1.7" class="outer-flow" />
-  <rect x="13" y="13" width="934" height="354" rx="6" fill="none" stroke="url(#s5-crimson)" stroke-width="1.2" class="crimson-trace" />
-  <rect x="16" y="16" width="928" height="348" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="inner-march" stroke-opacity="0.65" />
+  <rect x="8" y="8" width="944" height="364" rx="8" fill="none" stroke="url(#s5-plat)" stroke-width="1.7" class="blade-glint" />
+  <rect x="13" y="13" width="934" height="354" rx="6" fill="none" stroke="url(#s5-crimson)" stroke-width="1.2" class="blood-fuller" />
+  <rect x="16" y="16" width="928" height="348" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="serrated-edge" stroke-opacity="0.65" />
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s5-plat)" stroke-width="1.1" fill="none" opacity="0.85">

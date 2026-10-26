@@ -37,29 +37,29 @@
     </clipPath>
 
     <style>
-      .outer-flow {
-        stroke-dasharray: 220 40;
-        animation: flowCW 18s linear infinite;
+      .pilgrim-step {
+        stroke-dasharray: 160 80 40 80;
+        animation: pilgrimEast 15s linear infinite;
       }
-      .inner-march {
-        stroke-dasharray: 12 6;
-        animation: flowCCW 24s linear infinite;
+      .lantern-mist {
+        stroke-dasharray: 80 320;
+        animation: lanternDrift 8s ease-in-out infinite alternate;
       }
-      .crimson-trace {
-        stroke-dasharray: 140 340;
-        animation: traceLoop 10s linear infinite;
+      .stone-path {
+        stroke-dasharray: 10 10;
+        animation: pathWest 24s linear infinite reverse;
       }
-      @keyframes flowCW {
-        from { stroke-dashoffset: 520; }
+      @keyframes pilgrimEast {
+        from { stroke-dashoffset: 720; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes flowCCW {
+      @keyframes lanternDrift {
+        0% { stroke-dashoffset: 0; opacity: 0.35; }
+        100% { stroke-dashoffset: 400; opacity: 1.0; }
+      }
+      @keyframes pathWest {
         from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 360; }
-      }
-      @keyframes traceLoop {
-        from { stroke-dashoffset: 960; }
-        to { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 400; }
       }
     </style>
   </defs>
@@ -71,9 +71,9 @@
   </g>
   <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
   <rect x="6" y="6" width="948" height="408" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="404" rx="8" fill="none" stroke="url(#s3-plat)" stroke-width="1.7" class="outer-flow" />
-  <rect x="13" y="13" width="934" height="394" rx="6" fill="none" stroke="url(#s3-crimson)" stroke-width="1.2" class="crimson-trace" />
-  <rect x="16" y="16" width="928" height="388" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="inner-march" stroke-opacity="0.65" />
+  <rect x="8" y="8" width="944" height="404" rx="8" fill="none" stroke="url(#s3-plat)" stroke-width="1.7" class="pilgrim-step" />
+  <rect x="13" y="13" width="934" height="394" rx="6" fill="none" stroke="url(#s3-crimson)" stroke-width="1.2" class="lantern-mist" />
+  <rect x="16" y="16" width="928" height="388" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="stone-path" stroke-opacity="0.65" />
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s3-plat)" stroke-width="1.1" fill="none" opacity="0.85">

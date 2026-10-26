@@ -37,29 +37,35 @@
     </clipPath>
 
     <style>
-      .outer-flow {
-        stroke-dasharray: 220 40;
-        animation: flowCW 18s linear infinite;
+      .herald-comet {
+        stroke-dasharray: 90 450;
+        animation: heraldComet 7.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
-      .inner-march {
-        stroke-dasharray: 12 6;
-        animation: flowCCW 24s linear infinite;
+      .crimson-glow {
+        animation: crimsonBreathe 4s ease-in-out infinite alternate;
       }
-      .crimson-trace {
-        stroke-dasharray: 140 340;
-        animation: traceLoop 10s linear infinite;
+      .sentinel-march {
+        stroke-dasharray: 16 12;
+        animation: sentinelPatrol 20s linear infinite;
       }
-      @keyframes flowCW {
-        from { stroke-dashoffset: 520; }
+      .halo-pulse {
+        animation: haloGlow 3s ease-in-out infinite alternate;
+      }
+      @keyframes heraldComet {
+        from { stroke-dashoffset: 1080; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes flowCCW {
+      @keyframes crimsonBreathe {
+        0% { opacity: 0.4; }
+        100% { opacity: 1.0; }
+      }
+      @keyframes sentinelPatrol {
         from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 360; }
+        to { stroke-dashoffset: 280; }
       }
-      @keyframes traceLoop {
-        from { stroke-dashoffset: 960; }
-        to { stroke-dashoffset: 0; }
+      @keyframes haloGlow {
+        0% { opacity: 0.45; }
+        100% { opacity: 0.95; }
       }
     </style>
   </defs>
@@ -71,9 +77,9 @@
   </g>
   <!-- Animated Perimeter Boundary Frame (ONLY Boundary Lines Move) -->
   <rect x="6" y="6" width="948" height="448" rx="9" fill="none" stroke="#2c3038" stroke-width="1.2" />
-  <rect x="8" y="8" width="944" height="444" rx="8" fill="none" stroke="url(#s1-plat)" stroke-width="1.7" class="outer-flow" />
-  <rect x="13" y="13" width="934" height="434" rx="6" fill="none" stroke="url(#s1-crimson)" stroke-width="1.2" class="crimson-trace" />
-  <rect x="16" y="16" width="928" height="428" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="inner-march" stroke-opacity="0.65" />
+  <rect x="8" y="8" width="944" height="444" rx="8" fill="none" stroke="url(#s1-plat)" stroke-width="1.7" class="herald-comet" />
+  <rect x="13" y="13" width="934" height="434" rx="6" fill="none" stroke="url(#s1-crimson)" stroke-width="1.2" class="crimson-glow" />
+  <rect x="16" y="16" width="928" height="428" rx="5" fill="none" stroke="#7c828e" stroke-width="0.65" class="sentinel-march" stroke-opacity="0.65" />
 
   <!-- Corner Cold-Iron Gothic Bevels -->
   <g stroke="url(#s1-plat)" stroke-width="1.1" fill="none" opacity="0.85">
